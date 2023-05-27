@@ -8,6 +8,20 @@ interface MainListProps {
     tag: string;
 }
 
+const tagToType = (tag:string)=>{
+    switch (tag) {
+        case "베스트셀러":
+            return "Bestseller";
+        case "신간":
+            return "ItemNewAll";
+        case "서적 목록":
+            return "all";
+        default:
+            return "all";
+    }
+
+}
+
 const MainList = ({ tag }: MainListProps) => {
 
     const [selectedBook, setSelectedBook] = React.useState<book | null>(null);
@@ -16,7 +30,7 @@ const MainList = ({ tag }: MainListProps) => {
         <div>
             <h1 style={{"paddingLeft": "50px", "display": "flex"}}>{tag}</h1>
             <Book book={selectedBook} />
-            <BookList type="temp" setBook={setSelectedBook}/>
+            <BookList type={tagToType(tag)} setBook={setSelectedBook}/>
         </div>
     );
 }

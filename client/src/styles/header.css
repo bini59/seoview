@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    padding: 0 40px;
+    border-bottom:0.5px solid var(--primary-color);
+}
+
+header > h1 {
+    margin: 25px 0;
+}
+
+header > nav{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header > nav > div {
+    margin: 0 10px;
+}
+header > nav > div > a {
+    color: var(--black);
+}
+header > nav > div > a:hover {
+    color: var(--primary-color);
+}

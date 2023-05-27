@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nanum Myeongjo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,4 +24,13 @@ code {
 
 *{
   box-sizing: border-box;
+}
+
+a{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--black);
 }

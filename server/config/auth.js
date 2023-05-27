@@ -1,11 +1,13 @@
-require('dotenv').config("../.env.development");
+require('dotenv').config({ path: ".env.development" });
+
+console.log(process.env.SQL_HOST);
 // get development or production
 const config = {
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    user: process.env.DB_USER,
-    password: process.env.DB_PW,
-    database: process.env.DB_NAME
+    host: process.env.SQL_HOST,
+    port: process.env.SQL_PORT,
+    user: process.env.SQL_ID,
+    password: process.env.SQL_PASS,
+    database: process.env.SQL_DB
 }
 
 module.exports = config;

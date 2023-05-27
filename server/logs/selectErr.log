@@ -1,0 +1,1 @@
+2023. 5. 28. 오전 2:45:32 : Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inner join book on booktags.book = book.isbn' at line 1

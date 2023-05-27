@@ -1,7 +1,6 @@
-create table tag(
-    id int primary key auto_increment,
-    name varchar(255) not null,
-    description text
-) ENGINE = InnoDB
-  DEFAULT CHARACTER SET utf8mb4 
-  DEFAULT COLLATE utf8mb4_general_ci;
+
+CREATE TABLE `tag` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

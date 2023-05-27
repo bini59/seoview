@@ -10,7 +10,6 @@ const Header = () => {
       <nav>
         <div><Link to="/best">베스트셀러</Link></div>
         <div><Link to="/new">신간</Link></div>
-        <div><Link to="/list">서적 목록</Link></div>
       </nav>
     </header>
   );

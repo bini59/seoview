@@ -14,7 +14,7 @@ const App = ()=> {
         <Routes>
           <Route path="/best" element={<MainList tag="베스트셀러"/>} />
           <Route path="/new" element={<MainList tag="신간" />} />
-          <Route path="/list" element={<MainList tag="서적 목록" />} />
+          <Route path="/" element={<MainList tag="서적 목록" />} />
         </Routes>
       </BrowserRouter>
     </div>

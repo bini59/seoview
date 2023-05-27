@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from '../Header';
 import MainList from './MainList';
-import List from './List';
 
 import '../../styles/App.css';
 
@@ -13,9 +12,9 @@ const App = ()=> {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/best" element={<MainList tag="best"/>} />
-          <Route path="/new" element={<MainList tag="new" />} />
-          <Route path="/list" element={<List />} />
+          <Route path="/best" element={<MainList tag="베스트셀러"/>} />
+          <Route path="/new" element={<MainList tag="신간" />} />
+          <Route path="/list" element={<MainList tag="서적 목록" />} />
         </Routes>
       </BrowserRouter>
     </div>

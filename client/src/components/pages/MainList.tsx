@@ -2,18 +2,21 @@ import React from "react";
 
 
 import Book from "../Book";
+import BookList from "../BookList";
 
 interface MainListProps {
     tag: string;
 }
 
 const MainList = ({ tag }: MainListProps) => {
-    const temp:book = {"title":"테스트","description":"테스트","url":"https://via.placeholder.com/150", "id":1, "author": "홍길동"};
+
+    const [selectedBook, setSelectedBook] = React.useState<book | null>(null);
 
     return (
         <div>
             <h1>{tag}</h1>
-            <Book book={temp} />
+            <Book book={selectedBook} />
+            <BookList type="temp" setBook={setSelectedBook}/>
         </div>
     );
 }

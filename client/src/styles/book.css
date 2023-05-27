@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: flex-start;
 
+    height: 300px;
+
     padding: 10px 40px 40px 40px;
 
     box-shadow: 0 5px 5px -5px rgba(0,0,0,0.2);
@@ -15,13 +17,13 @@
 }
 .book > .book-img{
     width: 50%;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.book > .book-img > img {
-    width: 100%;
-    object-fit: contain;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* overflow-y: hidden; */
 }
 
 .book > .book-info{
@@ -32,4 +34,64 @@
 
 .book > .book-info > h1, .book > .book-info > h4 {
     margin: 5px 0;
+}
+
+.book-item{
+    width: 170px;
+    height: 270px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    box-shadow: 3px 4px 3px -3px rgba(0,0,0,0.2);
+}
+.book-item:hover{
+    box-shadow: 3px 4px 3px -3px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.book-item:active{
+    box-shadow: 3px 4px 3px -3px rgba(0,0,0,0.6);
+}
+
+.book-item > .book-item-img{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    overflow-y: hidden;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.book-item > .book-item-img > img{
+    width: 100%;
+}
+
+.book-item > .book-item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+}
+
+
+.book-item > .book-item-info > h4, .book-item > .book-item-info > h5{
+    margin: 0;
+}
+.book-item > .book-item-info > h4{
+    margin: 5px 0;
+}
+
+.book-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 40px 40px 40px;
+    height: calc(100vh - 416px);
+    min-height: 300px;
+    overflow-y: scroll;
 }

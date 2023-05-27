@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header';
-import MainList from './components/pages/MainList';
-import List from './components/pages/List';
+import Header from '../Header';
+import MainList from './MainList';
+import List from './List';
 
-import './App.css';
+import '../../styles/App.css';
 
 const App = ()=> {
   return (

@@ -14,7 +14,7 @@ const MainList = ({ tag }: MainListProps) => {
 
     return (
         <div>
-            <h1>{tag}</h1>
+            <h1 style={{"paddingLeft": "50px", "display": "flex"}}>{tag}</h1>
             <Book book={selectedBook} />
             <BookList type="temp" setBook={setSelectedBook}/>
         </div>

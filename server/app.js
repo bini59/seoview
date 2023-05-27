@@ -22,6 +22,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+const apiRouter = require('./routes/apis');
+app.use('/api', apiRouter);
+
+
+
 app.use((req, res, next) => {
     next(createError(404));
 })
@@ -33,6 +38,6 @@ app.use((err, req, res, next) => {
     res.send(err);
 });
 
-app.listen(3000, () => {
-    console.log('Express App on port 3000!');
+app.listen(3001, () => {
+    console.log('Express App on port 3001!');
 });

@@ -2,6 +2,7 @@ header{
     display: flex;
     padding: 0 40px;
     border-bottom:0.5px solid var(--primary-color);
+    height: 80px;
 }
 
 header > h1 {
